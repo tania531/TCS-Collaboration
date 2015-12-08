@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        TCS Collab Tool "t-Collab"
+                    </a>
+                </li>
+                <li >
+                    <a href="#">USER  |  Sheet Name </a>
+                </li>
+                <li >
+                    <a href="#" class="active">Tania  |  Collaboration Tool</a>
+                </li>
+                
+                <li class="read_write">
+                    <a href="#">Manish  |  December Budget</a>
+                </li>
+                <li class="active">
+                    <a href="#">Vivek  |  Equipment Inventory</a>
+                </li>
+
+                <li >
+                    <a href="#" class="read_only">Deepak  |  December Projects</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Current Sheet - EtherCalc</h1>
+<!--                         <p>This template has a responsive menu toggling system.  <code>#page-content-wrapper</code>.</p>
+ -->                       
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Sidebar</a>
+                    <div id="iframe_EtherCalc">
+                        <iframe src="http://tanias-macbook-pro.local:8000/fridec4_453" name="" width="950" height="350"> Sorry your browser does not support frames or is currently not set to accept them.</iframe>
+                    </div>
+
+<!-- Read more: http://www.webdesign.org/html-and-css/tutorials/basic-iframe-code.9081.html#ixzz3tgPQKcBR
+ -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
